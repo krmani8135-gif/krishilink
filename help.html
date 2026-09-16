@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>KrishiLink — Help & Support</title>
+<link rel="stylesheet" href="dashboard.css" />
+<link rel="stylesheet" href="help.css" />
+  <link rel="stylesheet" href="chatbot.css" />
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- SIDEBAR (same as dashboard) -->
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">KL</div>
+      <div>
+        <div class="brand-name">KrishiLink</div>
+        <div class="brand-tag">Market Intelligence</div>
+      </div>
+    </div>
+
+    <div class="user-card">
+      <div class="avatar" id="sidebarAvatar">AD</div>
+      <div>
+        <div class="user-name" id="sidebarName"> Admin</div>
+        <div class="user-role" id="sidebarRole">Farmer · Nashik</div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="dashboard.html" class="nav-item">
+        <span class="nav-icon">⌂</span> Dashboard
+      </a>
+      <a href="#" class="nav-item">
+        <span class="nav-icon">↗</span> Price Intelligence
+      </a>
+      <a href="buyers.html" class="nav-item">
+        <span class="nav-icon">☑</span> Verified Buyers
+      </a>
+      <a href="index.html" class="nav-item">
+        <span class="nav-icon">+</span> Sell My Crop
+      </a>
+      <a href="transactions.html" class="nav-item">
+        <span class="nav-icon">▭</span> Transactions
+      </a>
+      <a href="#" class="nav-item">
+        <span class="nav-icon">▤</span> FPO Hub
+      </a>
+      <a href="help.html" class="nav-item active">
+        <span class="nav-icon">?</span> Help &amp; Support
+      </a>
+      <a href="login.html" class="nav-item" id="logoutBtn">
+        <span class="nav-icon">⎋</span> Logout
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="footer-badge">✓</div>
+      <div>
+        <div class="footer-title">Transparent trading</div>
+        <div class="footer-sub">Verified buyers · Clear prices</div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <header class="topbar">
+      <div class="breadcrumb">Farmer Portal / <strong>Help &amp; Support</strong></div>
+      <div class="topbar-right">
+        <button class="icon-btn" aria-label="Notifications">🔔</button>
+        <select class="lang-select">
+          <option>English</option>
+          <option>हिंदी</option>
+          <option>मराठी</option>
+        </select>
+        <div class="user-chip">
+          <div class="avatar avatar-sm">RK</div>
+          <span>Admin ▾</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero-row">
+      <div>
+        <div class="eyebrow">We're here to help</div>
+        <h1 class="greeting">Help &amp; Support</h1>
+        <p class="subtext">Find answers, raise a complaint, or talk to our support team.</p>
+      </div>
+    </section>
+
+    <!-- Quick contact cards -->
+    <section class="stat-grid help-contact-grid">
+      <div class="stat-card help-contact-card">
+        <div class="stat-top"><span>Call Us</span><span class="stat-icon">📞</span></div>
+        <div class="stat-value">1800-266-0000</div>
+        <div class="stat-delta">Toll-free · 7 AM – 9 PM, all days</div>
+      </div>
+      <div class="stat-card help-contact-card">
+        <div class="stat-top"><span>WhatsApp</span><span class="stat-icon">💬</span></div>
+        <div class="stat-value">98xxxxxx00</div>
+        <div class="stat-delta">Fastest response, share photos too</div>
+      </div>
+      <div class="stat-card help-contact-card">
+        <div class="stat-top"><span>Email</span><span class="stat-icon">✉️</span></div>
+        <div class="stat-value">support@krishilink.in</div>
+        <div class="stat-delta">Reply within 24 hours</div>
+      </div>
+    </section>
+
+    <section class="bottom-grid help-grid">
+
+      <!-- FAQ -->
+      <div class="panel">
+        <div class="panel-head">
+          <h3>Frequently asked questions</h3>
+        </div>
+
+        <div class="faq-list" id="faqList">
+          <div class="faq-item">
+            <button class="faq-question">How is the mandi price updated? <span class="faq-toggle">+</span></button>
+            <div class="faq-answer">Prices are pulled from nearby APMC mandis and updated daily so you can compare before selling.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">How do I know a buyer is verified? <span class="faq-toggle">+</span></button>
+            <div class="faq-answer">Every buyer on KrishiLink goes through a verification check. Look for the green "Verified" badge on their profile before you deal with them.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">What if a buyer doesn't pay after pickup? <span class="faq-toggle">+</span></button>
+            <div class="faq-answer">Raise a complaint using the form on this page with your transaction details. Our team will step in and follow up with the buyer directly.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Can I list more than one crop at a time? <span class="faq-toggle">+</span></button>
+            <div class="faq-answer">Yes — go to "Sell My Crop" and submit a separate listing for each crop you want to sell.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Is KrishiLink free to use? <span class="faq-toggle">+</span></button>
+            <div class="faq-answer">Yes, listing your crop and checking prices is completely free for farmers.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Complaint / Grievance form -->
+      <div class="panel">
+        <div class="panel-head">
+          <h3>Raise a complaint</h3>
+        </div>
+        <form id="complaintForm">
+          <label for="issueType">Issue type</label>
+          <select id="issueType" required>
+            <option value="">Select an issue</option>
+            <option value="payment">Payment not received</option>
+            <option value="quality">Buyer disputed quality/grading</option>
+            <option value="price">Price mismatch from listing</option>
+            <option value="logistics">Pickup / transport issue</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="txnId">Transaction ID (if any)</label>
+          <input type="text" id="txnId" placeholder="e.g. TXN10234" />
+
+          <label for="details">Describe the issue</label>
+          <textarea id="details" rows="4" placeholder="Tell us what happened..." required></textarea>
+
+          <button type="submit" class="btn-primary help-submit-btn">Submit Complaint</button>
+        </form>
+        <p id="complaintMessage"></p>
+      </div>
+
+    </section>
+
+  </main>
+</div>
+
+<script src="dashboard.js"></script>
+<script src="help.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>

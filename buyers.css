@@ -1,0 +1,95 @@
+/* buyers.css - extends dashboard.css */
+
+.buyer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.buyer-card {
+  background: white;
+  border: 1px solid var(--grey-200);
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.buyer-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.buyer-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--green-50);
+  color: var(--green-900);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.buyer-name { font-weight: 700; font-size: 15px; }
+
+.buyer-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--green-700);
+  background: var(--green-50);
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-top: 2px;
+}
+
+.buyer-info {
+  font-size: 13px;
+  color: var(--grey-500);
+  margin-bottom: 4px;
+}
+
+.buyer-phone {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 10px 0 14px;
+}
+
+.buyer-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.buyer-actions a {
+  flex: 1;
+  text-align: center;
+  padding: 9px 0;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-call {
+  background: var(--green-700);
+  color: white;
+}
+
+.btn-whatsapp {
+  background: var(--green-50);
+  color: var(--green-700);
+}
+
+@media (max-width: 900px) {
+  .buyer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 600px) {
+  .buyer-grid { grid-template-columns: 1fr; }
+}

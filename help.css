@@ -1,0 +1,110 @@
+/* help.css - extends dashboard.css styles */
+
+.help-contact-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.help-contact-card .stat-value {
+  font-size: 17px;
+}
+
+.help-grid {
+  grid-template-columns: 1.1fr 1fr;
+  align-items: start;
+}
+
+/* FAQ accordion */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.faq-item {
+  border: 1px solid var(--grey-200);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background: white;
+  border: none;
+  padding: 13px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--ink);
+}
+
+.faq-question:hover { background: var(--green-50); }
+
+.faq-toggle {
+  color: var(--green-700);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease, padding 0.25s ease;
+  padding: 0 14px;
+  font-size: 13.5px;
+  color: var(--grey-500);
+  background: var(--green-50);
+}
+
+.faq-item.open .faq-answer {
+  max-height: 200px;
+  padding: 12px 14px 14px;
+}
+
+.faq-item.open .faq-toggle { transform: rotate(45deg); }
+
+/* Complaint form */
+#complaintForm {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#complaintForm label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+#complaintForm select,
+#complaintForm input,
+#complaintForm textarea {
+  padding: 10px 12px;
+  border: 1px solid var(--grey-200);
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.help-submit-btn {
+  margin-top: 16px;
+  width: 100%;
+  border: none;
+  text-align: center;
+}
+
+#complaintMessage {
+  color: var(--green-700);
+  font-weight: 600;
+  font-size: 13.5px;
+  margin-top: 8px;
+}
+
+@media (max-width: 900px) {
+  .help-contact-grid { grid-template-columns: 1fr; }
+  .help-grid { grid-template-columns: 1fr; }
+}

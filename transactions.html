@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>KrishiLink — Transactions</title>
+<link rel="stylesheet" href="dashboard.css" />
+<link rel="stylesheet" href="transactions.css" />
+  <link rel="stylesheet" href="chatbot.css" />
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- SIDEBAR (same as dashboard) -->
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">KL</div>
+      <div>
+        <div class="brand-name">KrishiLink</div>
+        <div class="brand-tag">Market Intelligence</div>
+      </div>
+    </div>
+
+    <div class="user-card">
+      <div class="avatar" id="sidebarAvatar">RK</div>
+      <div>
+        <div class="user-name" id="sidebarName">Ramesh Kumar</div>
+        <div class="user-role" id="sidebarRole">Farmer · Nashik</div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="dashboard.html" class="nav-item">
+        <span class="nav-icon">⌂</span> Dashboard
+      </a>
+      <a href="#" class="nav-item">
+        <span class="nav-icon">↗</span> Price Intelligence
+      </a>
+      <a href="buyers.html" class="nav-item">
+        <span class="nav-icon">☑</span> Verified Buyers
+      </a>
+      <a href="index.html" class="nav-item">
+        <span class="nav-icon">+</span> Sell My Crop
+      </a>
+      <a href="transactions.html" class="nav-item active">
+        <span class="nav-icon">▭</span> Transactions
+      </a>
+      <a href="#" class="nav-item">
+        <span class="nav-icon">▤</span> FPO Hub
+      </a>
+      <a href="help.html" class="nav-item">
+        <span class="nav-icon">?</span> Help &amp; Support
+      </a>
+      <a href="login.html" class="nav-item" id="logoutBtn">
+        <span class="nav-icon">⎋</span> Logout
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="footer-badge">✓</div>
+      <div>
+        <div class="footer-title">Transparent trading</div>
+        <div class="footer-sub">Verified buyers · Clear prices</div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <header class="topbar">
+      <div class="breadcrumb">Farmer Portal / <strong>Transactions</strong></div>
+      <div class="topbar-right">
+        <button class="icon-btn" aria-label="Notifications">🔔</button>
+        <select class="lang-select">
+          <option>English</option>
+          <option>हिंदी</option>
+          <option>मराठी</option>
+        </select>
+        <div class="user-chip">
+          <div class="avatar avatar-sm">AD</div>
+          <span>Admin ▾</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero-row">
+      <div>
+        <div class="eyebrow">Track your sales</div>
+        <h1 class="greeting">Transactions</h1>
+        <p class="subtext">All your crop sales and payment status, in one place.</p>
+      </div>
+    </section>
+
+    <!-- Filter tabs -->
+    <div class="txn-tabs">
+      <button class="txn-tab active">All</button>
+      <button class="txn-tab">Pending Pickup</button>
+      <button class="txn-tab">Completed</button>
+      <button class="txn-tab">Payment Due</button>
+    </div>
+
+    <!-- Transactions panel -->
+    <section class="panel txn-panel">
+
+      <!-- Empty state (shown when there are no transactions) -->
+      <div class="empty-state" id="emptyState">
+        <div class="empty-icon">▭</div>
+        <h3>No transactions yet</h3>
+        <p>Once you sell a crop to a verified buyer, it will show up here with pickup and payment status.</p>
+        <a href="index1.html" class="btn-primary">+ List My Crop</a>
+      </div>
+
+      <!-- Transaction rows go here once data exists -->
+      <div id="txnList" class="txn-list"></div>
+
+    </section>
+
+  </main>
+</div>
+
+<script src="dashboard.js"></script>
+<script src="transactions.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>
