@@ -4,9 +4,13 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>KrishiLink — Farmer Dashboard</title>
-<link rel="stylesheet" href="dashboard.css" />
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="dashboard.css" />
+  <link rel="stylesheet" href="language.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
   <link rel="stylesheet" href="chatbot.css" />
+  <link rel="stylesheet" href="language.css">
 </head>
 <body>
 
@@ -31,31 +35,66 @@
     </div>
 
     <nav class="nav">
-      <a href="dashboard.html" class="nav-item active">
-        <span class="nav-icon">⌂</span> Dashboard
-      </a>
-      <a href="#" class="nav-item">
-        <span class="nav-icon">↗</span> Price Intelligence
-      </a>
-      <a href="buyers.html" class="nav-item">
-        <span class="nav-icon">☑</span> Verified Buyers
-      </a>
-      <a href="index1.html" class="nav-item">
-        <span class="nav-icon">+</span> Sell My Crop
-      </a>
-      <a href="transactions.html" class="nav-item">
-        <span class="nav-icon">▭</span> Transactions
-      </a>
-      <a href="#" class="nav-item">
-        <span class="nav-icon">▤</span> FPO Hub
-      </a>
-      <a href="help.html" class="nav-item">
-        <span class="nav-icon">?</span> Help &amp; Support
-      </a>
-      <a href="login.html" class="nav-item" id="logoutBtn">
-        <span class="nav-icon">⎋</span> Logout
-      </a>
-    </nav>
+
+  <a href="dashboard.html" class="nav-item active">
+    <span class="nav-icon">⌂</span>
+    <span data-i18n="dashboard">Dashboard</span>
+  </a>
+
+  <a href="#" class="nav-item">
+    <span class="nav-icon">↗</span>
+    <span data-i18n="price">Price Intelligence</span>
+  </a>
+
+  <a href="buyers.html" class="nav-item">
+    <span class="nav-icon">☑</span>
+    <span data-i18n="buyers">Verified Buyers</span>
+  </a>
+
+  <a href="index1.html" class="nav-item">
+    <span class="nav-icon">+</span>
+    <span data-i18n="sell">Sell My Crop</span>
+  </a>
+
+  <a href="transactions.html" class="nav-item">
+    <span class="nav-icon">▭</span>
+    <span data-i18n="transactions">Transactions</span>
+  </a>
+
+  <a href="#" class="nav-item">
+    <span class="nav-icon">▤</span>
+    <span data-i18n="fpo">FPO Hub</span>
+  </a>
+
+  <!-- NEW -->
+  <a href="profit.html" class="nav-item">
+    <span class="nav-icon">💰</span>
+    <span data-i18n="profit">Profit Calculator</span>
+  </a>
+
+  <!-- NEW -->
+  <a href="alerts.html" class="nav-item">
+    <span class="nav-icon">🔔</span>
+    <span data-i18n="alerts">Price Alerts</span>
+  </a>
+
+  <!-- NEW -->
+  <a href="reviews.html" class="nav-item">
+    <span class="nav-icon">⭐</span>
+    <span data-i18n="reviews">Buyer Reviews</span>
+  </a>
+
+  <a href="help.html" class="nav-item">
+    <span class="nav-icon">?</span>
+    <span data-i18n="help">Help &amp; Support</span>
+  </a>
+
+  <a href="login.html" class="nav-item" id="logoutBtn">
+    <span class="nav-icon">⎋</span>
+    <span data-i18n="logout">Logout</span>
+  </a>
+
+</nav>
 
     <div class="sidebar-footer">
       <div class="footer-badge">✓</div>
@@ -74,9 +113,9 @@
       <div class="topbar-right">
         <button class="icon-btn" aria-label="Notifications">🔔</button>
         <select class="lang-select">
-          <option>English</option>
-          <option>हिंदी</option>
-          <option>मराठी</option>
+          <option value="en">English</option>
+          <option value="hi">हिंदी</option>
+          <option value="mr">मराठी</option>
         </select>
         <div class="user-chip">
           <div class="avatar avatar-sm">AD</div>
@@ -151,5 +190,6 @@
 
 <script src="dashboard.js"></script>
   <script src="chatbot.js"></script>
+  <script src="language.js"></script>
 </body>
 </html>

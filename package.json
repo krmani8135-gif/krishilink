@@ -1,7 +1,7 @@
 {
   "name": "krishilink-backend",
   "version": "1.0.0",
-  "description": "KrishiLink Backend - Market Linkages & Price Discovery for Farmers (SIH26132)",
+  "description": "KrishiLink Backend - Market Linkages & Price Discovery for Farmers",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
